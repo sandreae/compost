@@ -36,10 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   back.addEventListener('touchstart', function(event) {
     id = "#" + sample.className
-    __(id).ramp([1,0],[0.05])
-      setTimeout(function(){ 
-        __(id).stop()
-        __("#samplergain").attr({"gain": 1}) }, 50);
+    if(number !== 0){
+        __(id).ramp([1,0],[0.05])
+        setTimeout(function(){ 
+          __(id).stop()
+          __("#samplergain").attr({"gain": 1}) }, 50);
+    }
     sampleName = sample.className
     splitName = sampleName.split('-');
     number = splitName[1]
