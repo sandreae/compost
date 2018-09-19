@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if(number !== 0){__(id).stop()}
     nextNumber = parseInt(number, 10) + 1
     nextId = "#" + splitName[0] + "-" + nextNumber
-    sample.className = nextId
+    sample.className = splitName[0] + "-" + nextNumber
     sample.innerHTML = nextNumber;
     console.log("next sample: " + nextId)
     __(nextId).start()
