@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   sample.addEventListener('touchstart', function(event) {
     id = "#" + sample.className
+    console.log(id)
     __(id).start()
     sampleName = sample.className
+    console.log(sampleName)
     splitName = sampleName.split('-');
     number = splitName[1]
     nextNumber = parseInt(number, 10) + 1
