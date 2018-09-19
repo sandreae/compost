@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(sample.className)
   })
 
-  __().sampler({path:"/compost/samples/1_clapogg.mp3", id: "sample-1", loop:false}).gain({id: "samplergain"}).connect("dac");
+  __().sampler({path:"/compost/samples/1_clapogg.mp3", id: "sample-1", loop:false}).gain({id: "samplergain"}).dac();
   __().sampler({path:"/compost/samples/2_clapogg.mp3", id: "sample-2", loop:false}).connect("#samplergain");
   __().sampler({path:"/compost/samples/3_clapogg.mp3", id: "sample-3", loop:false}).connect("#samplergain");
   __().sampler({path:"/compost/samples/4_clapogg.mp3", id: "sample-4", loop:false}).connect("#samplergain");
