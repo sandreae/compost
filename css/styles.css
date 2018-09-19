@@ -48,6 +48,12 @@ audio {
     border: solid black;
 }
 
+.player {
+    -webkit-flex: 1 20%;
+    flex: 1 20%;
+    border: solid black;
+}
+
 #touch-synth {
     width: 20vw;
     position: fixed;

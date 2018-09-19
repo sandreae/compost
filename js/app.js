@@ -21,15 +21,17 @@ document.addEventListener("DOMContentLoaded", function() {
     splitName = sampleName.split('-');
     number = splitName[1]
     nextNumber = parseInt(number, 10) + 1
-    sample.className = "sample-" + nextNumber
+    sample.className = splitName[0] + nextNumber
     sample.innerHTML = nextNumber;
     console.log(sample.className)
   })
 
-  __().sampler({path:"/compost/samples/1_clapogg.mp3", id: "sample-1", loop:false}).gain({id: "samplergain"}).dac();
-  __().sampler({path:"/compost/samples/2_clapogg.mp3", id: "sample-2", loop:false}).connect("#samplergain");
-  __().sampler({path:"/compost/samples/3_clapogg.mp3", id: "sample-3", loop:false}).connect("#samplergain");
-  __().sampler({path:"/compost/samples/4_clapogg.mp3", id: "sample-4", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/gus/Sb1 dithering.mp3", id: "gus-1", loop:false}).gain({id: "samplergain"}).dac();
+  __().sampler({path:"/compost/samples/gus/Sb2 children.mp3", id: "gus-2", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/gus/Sb3 symb.mp3", id: "gus-3", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/gus/Sb4 fjaeril.mp3", id: "gus-4", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/gus/Sb5 muted tones.mp3", id: "gus-5", loop:false}).connect("#samplergain");
+
 
   __("#samplergain").attr({"gain": 1});
 
