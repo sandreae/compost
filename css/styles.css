@@ -54,7 +54,7 @@ audio {
     width: 100vw;
     position: fixed;
     border: solid black;
-    margin-top: 80vh;
+    top: 80vh;
     height: 10vh;
 }
 
