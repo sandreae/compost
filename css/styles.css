@@ -6,7 +6,7 @@ html, body {
     padding: 0;
     overflow: hidden;
     position: fixed;
-    font-size: 40;
+    font-size: 40px;
 }
 
 body {
@@ -45,9 +45,17 @@ audio {
 }
 
 #sample {
-    -webkit-flex: 1 20%;
+    -webkit-flex: 1 80%;
     flex: 1 20%;
     border: solid black;
+}
+
+#back {
+    width: 100vw;
+    position: fixed;
+    border: solid black;
+    padding-top: 80vh;
+    height: 10vh;
 }
 
 .player {
