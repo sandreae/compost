@@ -39,6 +39,11 @@ document.addEventListener("DOMContentLoaded", function() {
   __().sampler({path:"/compost/samples/sam/mp3s/05space.mp3", id: "sam-5", loop:false}).connect("#samplergain");
   __().sampler({path:"/compost/samples/sam/mp3s/06tools.mp3", id: "sam-6", loop:false}).connect("#samplergain");
 
+  __().sampler({path:"/compost/samples/hanna/mp3s/Water.mp3", id: "hanna-1", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/hanna/mp3s/Prassel.mp3", id: "hanna-2", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/hanna/mp3s/Fossit.mp3", id: "hanna-3", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/hanna/mp3s/Flaska.mp3", id: "hanna-4", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/hanna/mp3s/Door.mp3", id: "hanna-5", loop:false}).connect("#samplergain");
 
 
   __("#samplergain").attr({"gain": 1});
