@@ -35,22 +35,17 @@ audio {
 }
 
 .flex-container-3 {
-    padding-left: 20vw;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     background-size: cover;
     background-image: url('../images/page2.jpg'); 
-    width: 80vw;
-}
-.record-button {
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
-    min-height: 25%;
+    width: 100vw;
 }
 
-.play-button {
+#sample {
     -webkit-flex: 1 20%;
     flex: 1 20%;
+    border: solid black;
 }
 
 #touch-synth {
@@ -60,6 +55,4 @@ audio {
     height: 100vh;
 }
 .active {background-color: red !important;}
- #drag-container {visibility: hidden; height: 100%;}
 .play-button {border: solid black;}
-.record-button {background: cyan;}
