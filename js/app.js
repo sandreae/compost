@@ -22,8 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("current sample: " + id)
       if(number !== 0){
           __(id).ramp([1,0],[0.05])
-          __(id).stop()
-          __("#samplergain").attr({"gain": 1})
+          setTimeout(function(){ 
+            __(id).stop()
+            __("#samplergain").attr({"gain": 1}) }, 50);
       }
     nextNumber = parseInt(number, 10) + 1
     nextId = "#" + splitName[0] + "-" + nextNumber
