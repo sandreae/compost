@@ -32,11 +32,12 @@ document.addEventListener("DOMContentLoaded", function() {
   __().sampler({path:"/compost/samples/gus/mp3s/Sb4 fjaeril.mp3", id: "gus-4", loop:false}).connect("#samplergain");
   __().sampler({path:"/compost/samples/gus/mp3s/Sb5 muted tones.mp3", id: "gus-5", loop:false}).connect("#samplergain");
 
-  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
-  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
-  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
-  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
-  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/01chord.mp3", id: "sam-1", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/02drops.mp3", id: "sam-2", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/03water.mp3", id: "sam-3", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/04bomb.mp3", id: "sam-4", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/05space.mp3", id: "sam-5", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/06tools.mp3", id: "sam-6", loop:false}).connect("#samplergain");
 
 
 

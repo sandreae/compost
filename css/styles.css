@@ -23,6 +23,10 @@ audio {
     display: none;
 }
 
+.big-font {
+    font-size: 40;
+}
+
 .flex-container {
     width: 100vw;
     height: 100vh;
