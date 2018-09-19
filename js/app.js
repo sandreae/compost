@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     nextId = splitName[0] + "-" + nextNumber
     sample.className = nextId
     sample.innerHTML = nextNumber;
-    console.log("current sample: " + id)
+    console.log("next sample: " + nextId)
     __(nextId).start()
   })
 
