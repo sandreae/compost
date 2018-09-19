@@ -1,13 +1,13 @@
 {
-  "name": "Trio Fun",
-  "description": "Trio Fun for Everyone",
-  "launch_path": "/triofun-ios/index.html",
+  "name": "Compost",
+  "description": "Compost sample player for Silence Blossoms",
+  "launch_path": "/compost/index.html",
   "icons": [{
-    "src": "/triofun-ios/icons/happytom.png",
+    "src": "/compost/icons/happytom.png",
     "sizes": "512x512",
     "type": "image/png"
   }, {
-    "src": "/triofun-ios/icons/happytom-small.png",
+    "src": "/compost/icons/happytom-small.png",
     "sizes": "128x128",
     "type": "image/png"
   }],
