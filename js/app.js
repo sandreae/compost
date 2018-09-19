@@ -19,12 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
     sampleName = sample.className
     splitName = sampleName.split('-');
     number = splitName[1]
+    console.log("current sample: " + id)
     if(number !== 0){__(id).stop()}
     nextNumber = parseInt(number, 10) + 1
     nextId = splitName[0] + "-" + nextNumber
     sample.className = nextId
     sample.innerHTML = nextNumber;
-    __(id).start()
+    console.log("current sample: " + id)
+    __(nextId).start()
   })
 
   back.addEventListener('touchstart', function(event) {
