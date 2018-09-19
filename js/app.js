@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
   __().sampler({path:"/compost/samples/3_clapogg.mp3", id: "sample-3", loop:false}).connect("#samplergain");
   __().sampler({path:"/compost/samples/4_clapogg.mp3", id: "sample-4", loop:false}).connect("#samplergain");
 
+  __("#samplergain").attr({"gain": 1});
+
 	cracked.soundLoaded = function(x) {
     console.log("sample loaded", x)
 	}
