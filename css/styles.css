@@ -6,6 +6,7 @@ html, body {
     padding: 0;
     overflow: hidden;
     position: fixed;
+    font-size: 40;
 }
 
 body {
@@ -23,9 +24,6 @@ audio {
     display: none;
 }
 
-.big-font {
-    font-size: 40;
-}
 
 .flex-container {
     width: 100vw;
