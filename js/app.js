@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
     splitName = sampleName.split('-');
     number = splitName[1]
     console.log("current sample: " + id)
-    if(number !== 0){__(id).stop()}
+      if(number !== 0){
+          __(id).ramp([1,0],[0.05])
+          __(id).stop()
+          __("#samplergain").attr({"gain": 1})
+      }
     nextNumber = parseInt(number, 10) + 1
     nextId = "#" + splitName[0] + "-" + nextNumber
     sample.className = splitName[0] + "-" + nextNumber
