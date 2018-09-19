@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var sampleName
   var splitName
   var nextNumber
+  var nextId
   var number
   var sample = document.getElementById("sample")
   var back = document.getElementById("back")
@@ -15,16 +16,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
   sample.addEventListener('touchstart', function(event) {
     id = "#" + sample.className
-    console.log(id)
-    __(id).start()
     sampleName = sample.className
-    console.log(sampleName)
     splitName = sampleName.split('-');
     number = splitName[1]
+    if(number !== 0){__(id).stop()}
     nextNumber = parseInt(number, 10) + 1
-    sample.className = splitName[0] + "-" + nextNumber
+    nextId = splitName[0] + "-" + nextNumber
+    sample.className = nextId
     sample.innerHTML = nextNumber;
-    console.log(sample.className)
+    __(id).start()
   })
 
   back.addEventListener('touchstart', function(event) {
@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (nextNumber === 0){nextNumber = 1}
     sample.className = splitName[0] + "-" + nextNumber
     sample.innerHTML = nextNumber;
-    console.log(sample.className)
   })
 
   __().sampler({path:"/compost/samples/gus/mp3s/Sb1 dithering.mp3", id: "gus-1", loop:false}).gain({id: "samplergain"}).dac();
