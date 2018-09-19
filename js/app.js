@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     splitName = sampleName.split('-');
     number = splitName[1]
     nextNumber = parseInt(number, 10) + 1
-    sample.className = splitName[0] + nextNumber
+    sample.className = splitName[0] + "-" + nextNumber
     sample.innerHTML = nextNumber;
     console.log(sample.className)
   })
@@ -31,6 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
   __().sampler({path:"/compost/samples/gus/mp3s/Sb3 symb.mp3", id: "gus-3", loop:false}).connect("#samplergain");
   __().sampler({path:"/compost/samples/gus/mp3s/Sb4 fjaeril.mp3", id: "gus-4", loop:false}).connect("#samplergain");
   __().sampler({path:"/compost/samples/gus/mp3s/Sb5 muted tones.mp3", id: "gus-5", loop:false}).connect("#samplergain");
+
+  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
+  __().sampler({path:"/compost/samples/sam/mp3s/Sb5 muted tones.mp3", id: "sam-5", loop:false}).connect("#samplergain");
+
 
 
   __("#samplergain").attr({"gain": 1});
