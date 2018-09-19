@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("current sample: " + id)
     if(number !== 0){__(id).stop()}
     nextNumber = parseInt(number, 10) + 1
-    nextId = splitName[0] + "-" + nextNumber
+    nextId = "#" + splitName[0] + "-" + nextNumber
     sample.className = nextId
     sample.innerHTML = nextNumber;
     console.log("next sample: " + nextId)
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     splitName = sampleName.split('-');
     number = splitName[1]
     nextNumber = parseInt(number, 10) - 1
-    if (nextNumber === 0){nextNumber = 1}
+    if (nextNumber <= 0){nextNumber = 0}
     sample.className = splitName[0] + "-" + nextNumber
     sample.innerHTML = nextNumber;
   })
