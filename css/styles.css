@@ -54,8 +54,8 @@ audio {
     width: 100vw;
     position: fixed;
     border: solid black;
-    top: 85vh;
-    height: 15vh;
+    top: 90%;
+    height: 10%;
 }
 
 .player {
