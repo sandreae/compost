@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             __("#samplergain").attr({"gain": 1}) }, 50);
       }
     nextNumber = parseInt(number, 10) + 1
+    if (nextNumber === 6) {nextNumber = 1}
     nextId = "#" + splitName[0] + "-" + nextNumber
     sample.className = splitName[0] + "-" + nextNumber
     sample.innerHTML = nextNumber;
